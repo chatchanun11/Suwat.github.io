@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffecf2; /* สีพื้นหลังหวานๆ */
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#yesButton {
+  background-color: #ff6f91; /* สีของปุ่ม Yes */
+  color: white;
+}
+
+#noButton {
+  background-color: #ff9a9e; /* สีของปุ่ม No */
+  color: white;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* ทำให้เต็มหน้าจอ */
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  object-fit: cover; /* ทำให้วิดีโอปรับขนาดให้พอดีกับกรอบ */
+}
+
+h2, p {
+  position: relative;
+  z-index: 1; /* ข้อความอยู่ด้านหน้า */
+  color: #ff6f91; /* สีของข้อความ */
+}
